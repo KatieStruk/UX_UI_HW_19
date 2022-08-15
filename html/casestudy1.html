@@ -22,6 +22,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
         <title>Case Study 1</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <link rel="stylesheet" href="../css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +35,11 @@
                 <p>
                     <a href="../index.html">Portfolio</a></p>
                 <p>
-                    <a href="./aboutme.html">About</a></p>
+                    <a href="../html/aboutme.html">About</a></p>
                 <p>
-                    <a href="./resume.html">Resume</a></p>
+                    <a href="../html/resume.html">Resume</a></p>
             </div>
-            <button onclick="parent.location='./html/contact.html'" type="button" id="buttonTop">Contact</button>
+            <button onclick="parent.location='../html/contact.html'" type="button" id="buttonTop">Contact</button>
         </nav>
 
         <section id="aikikaiHero">
@@ -173,7 +174,12 @@
                 </div>
                 <img src="../images/cs1_survey.png">
             </div><br><br>
-            <hr>
+            </section>
+
+
+    <section class="yellowBack">
+        <br><br>
+        <div class="alignCaseStudy">
         <h1>2. Definition</h1>
         <div class="survey">
             <div>
@@ -186,9 +192,13 @@
         </div>
         <h3>Problem Statement</h3>
         <p>The Nashville Aikikai website was designed to inform the community about their practice. We have observed that the website isn’t providing the right information for potential students, which may contribute to low attendance in beginner classes. <br>
+        How might we improve the experience with finding useful information on the Nashville Aikikai website to increase attendance at beginner classes? </p>
+        <br><br>
+    </div>
+    </section>
 
-        How might we improve the experience with finding useful information on the Nashville Aikikai website to increase attendance at beginner classes? </p><hr>
-        <h1>3. Ideation</h1>
+    <section class="alignCaseStudy">
+        <br><br><br><h1>3. Ideation</h1>
         <p>Now that the team had identified a user and a problem to work on that could give value to our stakeholders it was time to ideate on solutions.</p>
         <img class="caseStudyImg" src="../images/cs1_i_like.png">
         <p>We opened the floor to open brainstorming with I like, I wish, what if to allow for a flow of ideas.</p>
@@ -199,10 +209,18 @@
         <br><p> Card Sorting</p>
         <img class="caseStudyImg" src="../images/cs1_site_map.png">
         <p>Wireframeing</p>
-        <img class="caseStudyImg" src="../images/cs1_wireframe.png"><br><hr>
-        <h1>4. Prototyping</h1>
-        <img class="caseStudyImg" src="../images/cs1_prototype.png"><br><br><br><hr>
-        <h1>5. Testing</h1>
+        <img class="caseStudyImg" src="../images/cs1_wireframe.png">
+        </section>
+
+        <section class="yellowBack ">
+            <div class="alignCaseStudy">
+                <br><br><br><h1>4. Prototyping</h1>
+                <img class="caseStudyImg" src="../images/cs1_prototype.png"><br><br><br><br>
+            </div>
+        </section>
+
+        <section class="alignCaseStudy">
+        <br><br><br><h1>5. Testing</h1>
         <p>Low Fidelity Prototype Testing Results</p>
         <img class="caseStudyImg2" src="../images/cs1_testing_results_1.png">
         <p>High Fidelity Prototype Testing Results</p>
@@ -233,16 +251,17 @@
                 <img class="navImageTest" src="../images/cs1_nav3.png">
             </div>
         </div> <hr>
+        
         <h1>6.Conclusion</h1>
         <h2>Meeting Goals and Solving Prolems</h2>
-        <div class="conclusion">
+        <div class="yellowBack conclusion">
             <h3>For Stakeholders</h3>
             <p>We designed the registration page with stakeholders in mind. Registering keeps users invested in showing up to their first class and results in better attendance.<br><br>
             We kept the designs simple enough that it could easily be built with Wordpress or Squarespace or another tool. <br><br>
             We made the site fresh and kept true to the dojo’s philosophies, aesthetics, and how they wanted to be viewed online.
             </p>
         </div>
-        <div class="conclusion">
+        <div class="yellowBack conclusion">
             <h3>For Users</h3>
             <p>We realized users had tons of questions that were keeping them from taking a risk and attending their first class. Because of my intimate knowledge of aikido I was able to write a FAQ section and a “What To Know Before Your First Class” section.<br><br>
             Users wanted a clear vision of what this dojo was like before showing up to class, so careful consideration was given to which photos would appear on the website to paint a better picture to users. We also included testimonals and video.<br><br>
@@ -260,14 +279,17 @@
             <li>After the initial rollout of the new site, the next user to consider are current existing dojo members.</li><br>
         </ul>
 
-         
-
-        
-
-
             
         </section>
-
+        <section class="contact yellowBack">
+            <div class="connectText center">
+            <h1 class="letsConnect"> Let's Work Together</h1>
+            <p class="textConnect"> I can design creative solutions for your next project.</p>
+            </div>
+            <div class="buttonCenter">
+            <button class="" onclick="parent.location='#'" type="button" id="buttonTop2">Email Me</button>
+            </div>
+    </section>
 
         <footer>
             <ul>
@@ -278,9 +300,7 @@
                     <a href="https://www.linkedin.com/in/katie-struk-961507230/">LinkedIn</a>
             </ul>
             <ul>
-                <li class="block blockTitle">Contact</li>
-                <li class="block">
-                    <a href="mailto:katie.hum@gmail.com"> Katie.hum@gmail.com</a>
+                
                 <li style="padding-top:2em" class="block copyright">Copyright- Katie Struk 2022</li>
             </ul>
             <ul>
@@ -289,4 +309,5 @@
             </ul>
         </footer>
     </body>
+    <script src="../js/index.js"></script>
 </html>

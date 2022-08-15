@@ -16,6 +16,7 @@ $(".myWorkPortfolio").ready(function(){
     $('#imgEdu').css('display','none');
     $('#imgWeBoard').css('display','none');
     $('#textWeBoard').css('display','none');
+    $('.contact').css('display','none');
 
 });
 
@@ -26,6 +27,7 @@ $(".arrow").on("click", function(){
     $("#imgEdu").slideDown(800);
     $("#imgWeBoard").slideDown(800);
     $("#textWeBoard").slideDown(800);
+    $(".contact").slideDown(800);
 });
 
 $(".title").on("click", function(){
@@ -34,7 +36,30 @@ $(".title").on("click", function(){
     $("#textEdu").slideDown(800);
     $("#imgEdu").slideDown(800);
     $("#imgWeBoard").slideDown(800);
-    $("#textWeBoard").slideDown(800);
+    $(".contact").slideDown(800);
+});
+
+$(function() {
+    // Open Popup
+    $('[popup-open]').on('click', function() {
+        var popup_name = $(this).attr('popup-open');
+ $('[popup-name="' + popup_name + '"]').fadeIn(300);
+    });
+ 
+    // Close Popup
+    $('[popup-close]').on('click', function() {
+ var popup_name = $(this).attr('popup-close');
+ $('[popup-name="' + popup_name + '"]').fadeOut(300);
+    });
+ 
+    // Close Popup When Click Outside
+    $('.popup').on('click', function() {
+ var popup_name = $(this).find('[popup-close]').attr('popup-close');
+ $('[popup-name="' + popup_name + '"]').fadeOut(300);
+    }).children().click(function() {
+ return false;
+    });
+ 
 });
 
 
